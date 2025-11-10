@@ -4,3 +4,10 @@
 
 # 4d-example-local-inference-llamafile
 Use llamafile from 4D
+
+[dependencies](https://github.com/miyako/4d-example-local-inference-llamafile/blob/main/local-inference/Project/Sources/dependencies.json)
+
+* [`miyako/llamafile`](https://github.com/miyako/llamafile)
+* [`miyako/models`](https://github.com/miyako/models) 
+* [`4d/4D-AIKit`](https://github.com/4d/4D-AIKit)
+ 
