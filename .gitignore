@@ -1,0 +1,3 @@
+local-inference/Project/DerivedData/*
+local-inference/userPreferences.*
+local-inference/Data/*
