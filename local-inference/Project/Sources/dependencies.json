@@ -8,10 +8,6 @@
 		"llamafile": {
 			"github": "miyako/llamafile",
 			"version": "latest"
-		},
-		"models": {
-			"github": "miyako/models",
-			"version": "latest"
 		}
 	}
 }

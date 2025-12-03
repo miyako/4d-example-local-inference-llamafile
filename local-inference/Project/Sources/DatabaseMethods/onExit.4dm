@@ -1,3 +1,3 @@
-var $llamafile : cs:C1710.llamafile.server
-$llamafile:=cs:C1710.llamafile.server.new()
-$llamafile.terminate()
+var $llama : cs:C1710.llamafile.llamafile
+$llama:=cs:C1710.llamafile.llamafile.new()
+$llama.terminate()

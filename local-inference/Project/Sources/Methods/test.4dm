@@ -1,21 +1,10 @@
 //%attributes = {}
-#DECLARE($model : Text)
-
-OPEN URL:C673("http://127.0.0.1:8181/")
-
 var $AIClient : cs:C1710.AIKit.OpenAI
 $AIClient:=cs:C1710.AIKit.OpenAI.new()
-$AIClient.baseURL:="http://127.0.0.1:8181/v1"
-
-var $options : cs:C1710.AIKit.OpenAIEmbeddingsParameters
-$options:=cs:C1710.AIKit.OpenAIEmbeddingsParameters.new()
+$AIClient.baseURL:="http://127.0.0.1:8080/v1"
 
 var $text : Text
-$text:="Hello world"
+$text:="The quick brown fox jumps over the lazy dog."
 
-/*
-the first call may take some time!
-*/
-
-var $response : Object
-$response:=$AIClient.embeddings.create($text; $model; $options)
+var $responseEmbeddings : cs:C1710.AIKit.OpenAIEmbeddingsResult
+$responseEmbeddings:=$AIClient.embeddings.create($text)
